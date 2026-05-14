@@ -1,0 +1,254 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    font-family: 'Poppins' sans-serif;
+    line-height: 1.2;
+}
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 40px 60px;
+    gap: 25px;
+}
+.navbar-head h2 {
+    font-size: 32px;
+    font-family: sans-serif;
+}
+.navbar-head p {
+    font-size: 16px;
+    color: gray;
+}
+.navbar-links {
+    font-size: 20px;
+    display: flex;
+    gap: 25px;
+}
+.navbar-links a {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+}
+.navbar-btn {
+    padding: 20px 30px;
+    border: none;
+    background-color: rgb(49, 167, 49);;
+    color: white;
+    border-radius: 6px;
+}
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 50px;
+    gap: 25px;
+}
+.hero-text {
+    flex: 1;
+}
+.hero-text h1 {
+    font-size: 35px;
+    margin-bottom: 15px;
+}
+.hero-text p {
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: gray;
+}
+.hero-btn {
+    margin-top: 20px;
+    padding: 20px 30px;
+    border: none;
+    background-color: rgb(49, 167, 49);;
+    color: white;
+    border-radius: 6px;
+}
+.hero-image {
+    flex: 1;
+}
+.hero-image img {
+    width: 100%;
+    border: 12px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+.features {
+   text-align: center;
+   background-color: rgb(217, 224, 235);
+}
+.features h2 {
+    padding: 20px 40px;
+    font-size: 35px;
+    font-family: sans-serif;
+}
+.text {
+    font-size: 22px;
+    color: gray;
+}
+.feature-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.card {
+    padding:20px;
+    margin: 40px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+    background-color: #f8fafc;
+    transition: 0.3s;
+}
+.card h3 {
+    font-size: 25px;
+    margin-bottom: 16px;
+}
+.card p {
+    font-size: 19px;
+    margin-bottom: 10px;
+}
+.testimonials {
+    text-align: center;
+}
+.testimonials h2 {
+    font-size: 30px;
+    margin-top: 40px;
+}
+.testimonials-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+.review {
+    padding: 30px;
+    margin: 30px;
+    border-radius: 12px;
+    background-color: #f8fafc;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+.review h3 {
+    font-size: 16px;
+}
+.review p {
+    font-size: 20px;
+    margin-bottom: 20px
+}
+.pricing {
+    text-align: center;
+}
+.pricing h2 {
+    font-size: 30px;
+    margin-top: 40px;
+}
+.price-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+.prices {
+    padding: 30px;
+    margin: 30px;
+    border-radius: 12px;
+    background-color: #f8fafc;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+.prices h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+.prices .price {
+    font-size: 26px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.prices p {
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+.price-btn {
+    padding: 20px 40px;
+    border: none;
+    background-color: rgb(49, 167, 49);;
+    color: white;
+    border-radius: 6px;
+}
+.popular {
+    transform: scale(1.05);
+    border: 2px solid blue;
+}
+.footer {
+    text-align: center;
+    padding: 40px;
+    background-color: green;
+    margin-top: 40px;
+}
+.footer h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+    color: white;
+}
+.footer-links a {
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+    font-size: 19px;
+}
+.footer-links {
+    margin-bottom: 20px;
+}
+.footer p {
+    color: white;
+    font-size: 16px;
+}
+.card, .review, .prices {
+    transition: 0.3s ease;
+}
+
+.card:hover, .review:hover, .prices:hover {
+    transform: translateY(-10px);
+}
+
+button:hover {
+    cursor: pointer;
+    opacity: 0.9;
+}
+
+@media(max-width: 768px)
+{
+    .navbar {
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px;
+    }
+    .navbar-links {
+        flex-direction: column;
+        align-items: center;
+    }
+    .hero {
+        flex-direction: column;
+        padding: 40px 60px;
+        text-align: center;
+    }
+    .hero h1 {
+        font-size: 36px;
+    }
+    .feature-grid, .testimonials-grid, .price-grid {
+        grid-template-columns: 1fr;
+    }
+    .features, .testimonials, .pricing {
+        padding: 30px 20px;
+    }
+    .footer {
+        padding: 40px 20px;
+    }
+}
+ body {
+    background-color: #ffffff;
+    color: #111827;
+ }
+ .features, .pricing {
+    background: #f8fafc;
+ }
